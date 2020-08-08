@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>weight converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Weight Converter</h1>
+       <div class="box1">
+        <label for="value">
+            <input type="text" placeholder="enter value" id="input">
+        </label>
+        <select name="options" id="select">
+           <option value="choose">select unit from options</option>
+            <option value ="1">kilogram to gram</option>
+            <option value ="2">gram to kilogram</option>
+            <option value ="3">pound to gram</option>
+            <option value ="4">pound to kilogram</option>
+        </select>
+        <button class="convert">convert</button>
+        <span class="result"></span>
+       </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
