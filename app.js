@@ -5,11 +5,13 @@ let result = document.querySelector(".result");
 let inputValue = 0;
 let selectValue = 0;
 let answer;
+let tl = gsap.timeline();
 
 convertBtn.addEventListener("click", () => {
     inputValue = Number(input.value);
     selectValue = Number(select.value);
-    
+    tl.from(".result", {opacity:0, duration:1, y:-50, ease:"elastic"});
+
     if (selectValue === 1) {
         answer = inputValue * 1000;
     }
@@ -23,5 +25,5 @@ convertBtn.addEventListener("click", () => {
         
     }
 
-    result.innerHTML = answer;
+    result.innerHTML = `the answer = ${answer}`;
 });
